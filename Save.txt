@@ -1,0 +1,25 @@
+// OLD CODE (DOES NOT WORK FOREVER) 
+
+var fur = 200
+var counter = 750+fur;
+let cur = 0
+var myFunction = function() {
+    if(cur == 0){
+        counter = 750+fur
+        __exposedClickHandler()
+        cur++
+    }
+    else if(cur == 1){
+        __exposedClickHandler()
+        counter = 1000+fur
+        cur++
+    }else if(cur == 2){
+        __exposedClickHandler()
+        cur=0
+        counter = 1250+fur
+    }
+    setTimeout(myFunction, counter);
+}
+setTimeout(myFunction, counter);
+
+// NEW CODE
